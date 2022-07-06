@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body{
@@ -104,7 +104,7 @@ body{
     margin: 100px;
     background-color: white;
     box-sizing: border-box;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px rgba(163, 161, 161, .5);
     display: flex;
     border-radius: 5px;
 }
@@ -140,7 +140,7 @@ body{
     margin-right: 100px; 
     background-color: white; 
     box-sizing: border-box; 
-    box-shadow: 0 0 10px grey; 
+    box-shadow: 0 0 10px rgba(163, 161, 161, .5); 
     border-radius: 5px;
     display: flex; 
 } 
@@ -168,7 +168,7 @@ body{
     margin-right: 100px;
     background-color: white;
     box-sizing: border-box;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 10px rgba(163, 161, 161, .5);
     border-radius: 5px;
     display: flex;
 }
@@ -192,14 +192,17 @@ body{
 
 .num-five{
     margin-left: 30%; 
-    margin-top: 35px;
+    margin-top: 60px;
     margin-right: 40%;
     background-color: white;
     box-sizing: border-box;
-    box-shadow: 0 0 5px grey;
+    box-shadow: 0 0 5px rgba(163, 161, 161, .5);
     border-radius: 5px;
     width: 500px;
     height: 170px;
+    z-index: 100;
+    margin-bottom: -70px;
+    position: relative;
 }
 
 .E{
@@ -209,24 +212,61 @@ body{
 
 .big-five{
     padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .bigger-five{
     border-color: hsl(322, 80%, 26%);
     background-color: hsl(322, 100%, 66%);
-    border: 2px solid;
+    border: 2px hsl(322, 80%, 26%) ;
     color: white;
     padding-left: 50px;
+    text-decoration: none;
     padding-right: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     border-radius: 30px;
     margin-left: 30px;
-    box-shadow: 0px 20px 20px 0px  rgb(211, 211, 211, 0.5);
+    box-shadow: 0px 5px 5px 0px  rgba(163, 161, 161, .5);
 
 }
 
-.footer{
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
     background-color: hsl(192, 100%, 9%);
+    width: 100%;    
+    z-index: 1;
+    min-height: 200px;
+    height: auto;
+    padding: 150px 7% 0 7%;
+}
+.footer-section {
+    /* flex: 1 30%; */
+    width: 32%;
+    color: #ffffff;
+    /* background-color: red; */
 }
 
+.footer-section li{
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+}
+.footer-section li > img{
+    object-fit: contain;
+    margin-right: 15px;
+}
+.footer-section .logo{
+    object-fit: contain;
+    margin: 15px 0px !important;
+    height: auto;
+    width: 40%;
+    max-width: 100%;
+}
+
+.about{
+    margin-left: 20px;
+}
