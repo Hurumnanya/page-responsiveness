@@ -7,11 +7,11 @@
 }
 
 body{
-    /* background-color: black;   */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    font-family: 'Open Sans';
     font-size: 18px;
 }
   
@@ -95,9 +95,6 @@ body{
     padding-bottom: 10px;
     margin-top: 30px;
     font-family: 'Poppins', sans-serif;
-
-    /* font-family: 'Open Sans', sans-serif; */
-    /* font-weight: 400; */
 }
 
 .num-two{
@@ -114,7 +111,6 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    /* background-color: aqua !important; */
 }
 
 .image-two{
@@ -126,14 +122,12 @@ body{
 }
 
 .B{
-    /* padding-left: 10%; */
     padding-right: 10%;
-    /*margin-top: 11%; */
 }
 
 .big-two{
     font-size: xx-large;
-    font-family: 'Opensans', sans-serif;
+    font-family: 'Open sans', sans-serif;
 }
 
 .bigger-two{
@@ -157,11 +151,6 @@ body{
     padding-bottom: 50px;
 } 
 
-.C{ 
-    /* padding-top: 13%; 
-    padding-left: 150px; */
-} 
-
 .big-three{ 
     padding-bottom: 10px; 
 } 
@@ -174,10 +163,6 @@ body{
     border-radius: 5px;
 }
 
-.D{
-    /* padding-top: 15%; 
-    padding-left: 150px; */
-}
 
 .big-four{ 
     padding-bottom: 10px; 
@@ -241,19 +226,20 @@ footer{
     height: auto;
     padding: 150px 7% 0 7%;
 }
+footer p.copy{
+    margin: 15px 0;
+    text-align: right;
+    color: #ffffff;
+}
 .f-row{
     display: flex;
-    background-color: red;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
 }
 .footer-section {
-    /* flex: 1 30%; */
-    /* 100/4 section = 25 */
-    width: 21%;
+    width: 15%;
     color: #ffffff;
-    /* background-color: red; */
 }
 .f-row .footer-section:first-child{
     width: 28% !important;
@@ -267,6 +253,7 @@ footer{
     margin: 0 0 20px 0;
     display: flex;
     align-items: flex-start;
+    
 }
 .footer-section li > img{
     color: white;
